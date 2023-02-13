@@ -1,0 +1,144 @@
+body {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 10px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  word-spacing: normal;
+  letter-spacing: -0.02em;
+  line-height: 1.3em;
+  /* color: #2efc00; */
+  color: #1C263C;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+h2 {
+  display: flex;
+  margin-left: 30px;
+  text-transform: lowercase;
+  font-size: 20px;
+  color: black;
+  margin-top: -50px;
+}
+
+h4 {
+  margin-left: 30px;
+}
+
+nav {
+  border-bottom: grey 0.5px solid;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.nav-links {
+  text-transform: lowercase;
+  font-size: 15px;
+  display: inline-flex;
+}
+
+.nav-links li {
+  padding: 0 20px;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-links a {
+  height: 50px;
+  width: 50px;
+  margin: 35px;
+  background-image: radial-gradient(circle at center , #2efc00 50%, transparent 50%);
+  background-repeat: no-repeat;
+  transition: background-size .5s, color .5s;
+  background-size: 0 0;
+  background-position: 50% 50%;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+background-size: 200% 200%;
+color: #2efc00;
+color: black;
+}
+
+.banner {
+  border-bottom: grey 0.5px solid;
+  padding-bottom: 100px;
+}
+
+.about {
+  border-bottom: grey 0.5px solid;
+}
+
+.about {
+  background-color: #1C263C;
+  padding-top: 15px;
+}
+
+.about p {
+  font-size: 70px;
+  color: white;
+  font-weight: 800;
+}
+
+.about h3 {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.about span {
+  /* font-style:italic; */
+  font-family: 'Playfair Display', serif;
+  color: #2efc00;
+}
+
+.tech-stack {
+  border-bottom: grey 0.5px solid;
+}
+
+.portfolio {
+  border-bottom: grey 0.5px solid;
+}
+
+.education{
+  border-bottom: grey 0.5px solid;
+}
+
+.contact {
+  border-bottom: grey 0.5px solid;
+  background-color: #455268;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.contact .fab {
+  color: #2efc00;
+}
+
+.footer p {
+  font-size: 14px;
+  color: grey;
+}
