@@ -1,3 +1,5 @@
+// NEED TO FIND OUT IF THIS IS THE BEST WAY TO DO THIS.
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
